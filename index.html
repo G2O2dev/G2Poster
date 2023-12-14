@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>G2Poster</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <p>Your token:</p>
+        <br>
+        <p id="token-text"></p>
+    </div>
+    <script>
+        const token = new URLSearchParams(window.location.search).get("token");
+        document.getElementById("token-text").innerText = token;
+    </script>
+</body>
+</html>
